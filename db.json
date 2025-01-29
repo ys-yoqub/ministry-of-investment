@@ -15,5 +15,126 @@
       "username": "admin1",
       "password": "admin"
     }
+  ],
+  "boards": [
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Test Board",
+      "columns": [
+        {
+          "id": "1",
+          "name": "",
+          "tasks": [
+            {
+              "id": "1",
+              "name": "Test task",
+              "description": "Task description"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

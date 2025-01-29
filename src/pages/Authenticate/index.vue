@@ -98,15 +98,15 @@ const onRegisterAction = (actionType: string) => {
 }
 
 const handleSubmit = async () => {
-  if (isLogin.value) {
-    const users = usersFetch.data.value as UserInterface[]
-    const filterUsers = users.filter(item => item.username === form.username)
+  const users = usersFetch.data.value as UserInterface[]
+  const filterUsers = users.filter(item => item.username === form.username)
 
+  if (isLogin.value) {
     if (filterUsers.length) {
       const user = filterUsers?.[0] as UserInterface
       if (user.password === form.password) {
         Cookies.set('isAuthenticated', 'true', {expires: 7}); // Expires in 7 days
-        router.push('/');
+        await router.push('/');
       } else {
         notification.error({message: `Password is incorrect`})
       }
@@ -114,13 +114,10 @@ const handleSubmit = async () => {
       notification.error({message: `User '${form.username}' not found`})
     }
   } else {
-    const users = usersFetch.data.value as UserInterface[]
-    const filterUsers = users.filter(item => item.username === form.username)
-
     if (filterUsers.length) {
       notification.error({message: `Username '${form.username}' is in use`})
     } else {
-      mutateApi.mutate({
+      await mutateApi.mutate({
         url: 'users',
         method: "POST",
         onSuccess: () => onRegisterAction('success'),
